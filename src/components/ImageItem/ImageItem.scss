@@ -1,0 +1,14 @@
+.image-item {
+  &__wrap {
+    display: flex;
+    margin: 10px 0;
+    height: 250px;
+  }
+  &__img {
+    cursor: pointer;
+  }
+  &__icon {
+    margin-left: 5px!important;
+    cursor: pointer;
+  }
+}

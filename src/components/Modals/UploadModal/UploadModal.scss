@@ -1,0 +1,29 @@
+.upload-modal {
+  width: auto!important;
+  background: none!important;
+  box-shadow: none!important;
+  @media (max-width: 500px) {
+    width: 95%!important;
+  }
+  &__trigger {
+    border: 5px dashed silver;
+    width: 300px;
+    height: 249px;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    &-input {
+      display: none;
+    }
+    &-icon {
+      cursor: pointer;
+    }
+  }
+  &__btns {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 60px 10px 10px 10px;
+  }
+}

@@ -1,0 +1,53 @@
+.tooltip {
+  &__wrap {
+    display: none;
+    align-items: center;
+    position: absolute;
+    &:hover {
+      .tooltip__btns {
+        display: block;
+      }
+    }
+  }
+  &__input {
+    display: flex;
+    margin-right: 5px;
+    input {
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      border: none;
+    }
+  }
+  &__picker {
+    &-wrap {
+      position: relative;
+      i {
+        cursor: pointer;
+      }
+    }
+    &-btn {
+      height: 25px;
+      width: 25px;
+      border-radius: 0 5px 5px 0;
+    }
+    &-color {
+      position: absolute;
+      z-index: 2;
+      bottom: 25px;
+      left: 0;
+    }
+  }
+  &__btns {
+    display: none;
+    i {
+      cursor: pointer;
+    }
+  }
+  &__content {
+    border-radius: 5px;
+    padding: 10px;
+    &-add {
+      cursor: pointer;
+    }
+  }
+}

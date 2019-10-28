@@ -1,0 +1,13 @@
+.image-preview {
+  &__wrap {
+    &:hover {
+      .tooltip__wrap {
+        display: flex;
+      }
+    }
+  }
+  &__image {
+    width: 600px!important;
+    height: 400px!important;
+  }
+}
